@@ -6,7 +6,7 @@ let complement (c: char) =
     | 'T' -> 'A'
     | 'C' -> 'G'
     | 'G' -> 'C'
-    | _ -> failwith "unexpected input " + c
+    | _ -> c
 
 let reverseComplement (sequence: string) =
     sequence.ToCharArray()
